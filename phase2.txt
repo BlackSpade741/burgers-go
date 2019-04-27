@@ -1,0 +1,113 @@
+sxplaining in detail how to use the application, the roles of users and how the users would go about using all the features of your website. Using the main features of your project should be intuitive enough that any user with access to your URL should be able to discover all its features.
+Also, provide an overview of the routes in your Express server, and what they are used for in your app.
+
+# BurgersGo Phase 2
+
+## Description
+
+In phase 2, we implemented the back end of our application, connected it with the front end we implemented in phase 1, and deployed the whole application onto Heroku. Due to time and skill constraints, we unfortunately had to cut down on some planned features, but everything else in the application has been implemented. 
+
+## Usage
+
+### Regular User 
+
+A user can do the following tasks:
+
+* Sign up and log in
+** In the top nav bar and bottom footer bar, click on the sign up or log in button, and enter the required information.
+
+* Log out
+** If the user is logged in, click on the user options drop down in the top nav bar, and find the sign out button there. Click on that sign out button or the sign out button in the bottom footer to sign out. 
+
+* Go to the build page to build a burger, then add it to their order
+** Click on the start building button to navigate to the burger builder page, drag the ingredients onto the plate to add to burger, and click checkout when finished. 
+** If there are already burgers in the current order, the user can just proceed by clicking checkout. 
+
+* See their current order in the checkout page
+** After clicking checkout, information on the current active order will be displayed in the checkout page
+** The user can also remove items in the order, or go back to the burger builder to add more items. 
+
+* Add their payment and delivery information and then check out
+** In the checkout page, there are forms where the user can enter their delivery and shipping information. Enter the information as required, click "done" for each form, and proceed by clicking the checkout button. 
+
+* View their recent orders in their profile
+** When logged in as a user, click on the user options drop down in the top nav bar and find the Your Account button, or click the link in the bottom footer. The user will be redirected here after login. The 3 most recent orders will be displayed at the very top of the page.
+
+* See all of their orders in the orders page
+** When logged in as a user, click on the user options drop down in the top nav bar and find the Order History button, or click the link in the bottom footer, or click the link in the profile page. All of the orders the user has placed will be displaced here sorted by recency. 
+
+* Click into an order to view details about that order, including the items in the order
+** In the profile page or the order history page, click on the Details button of a single order, and the order summary page will be displayed. The user will be redirected here after checking out from the checkout page. Information and items in the order are displayed here. 
+
+* Change their password in the user settings
+** When logged in as a user, click on the user options drop down in the top nav bar and find the Settings button, or click the link in the bottom footer. Here the user can enter their old password and a new one, and click the button to change their password. 
+
+### Admin
+
+An admin can do the following tasks:
+
+* Log in
+** In the top nav bar and bottom footer bar, click on the log in button, and enter the required information.
+
+* Log out
+** If the user is logged in, click on the user options drop down in the top nav bar, and find the sign out button there. Click on that sign out button or the sign out button in the bottom footer to sign out. 
+
+* View the information of all the users in the database and delete them in the admin panel 
+** When logged in as an admin, click on the admin options drop down in the top nav bar and find the Admin Panel button, or click the link in the bottom footer. Here there will be two tabs, and the admin can manage Users in the user tab. A list of all users, their username and email and status, will be displayed here, as well as an option to remove them. Removing a user will also remove any relevant orders they have placed. 
+
+* Add a new user/admin in the admin panel 
+** At the bottom of the users tab there is a form to fill in new user information, and an option to create this user as an admin. Click the submit button, and a new user will be created. 
+
+* View the information of all orders in the database in the admin orders page
+** When logged in as an admin, click on the admin options drop down in the top nav bar and find the Admin Panel button, or click the link in the bottom footer. Here there will be two tabs, click on the orders tab, and click the button to go to Admin Orders page. Here, there is a list of all the orders in the database, with the option to view them in more detail. 
+
+* Click into an order to view details about that order, and change the status of the order
+** In the Admin Orders page, click on the Details button of a single order, and the order summary page will be displayed.  Information and items in the order are displayed here. There is a section where the user can select a status to update the order to, and clicking the set status button will set the status of the order. 
+
+* Change their password in the admin settings
+** When logged in as a admin, click on the admin options drop down in the top nav bar and find the Settings button, or click the link in the bottom footer. Here the admin can enter their old password and a new one, and click the button to change their password. 
+
+
+## Server Overview
+
+Here is a list of routes that are used in the server, as well as the usage in the front end. Since routing is done in the front end with react, the server serves mainly as a connection to the database. 
+
+* /api/loggedIn GET
+** Returns whether there is a user logged in or not given the cookie. Used mainly for testing purposes. 
+
+* /api/users GET
+** Gets all users in the database. Used in the admin panel. 
+
+* /api/users POST
+** Creates a new user and stores it in the database. Used for creating new users in sign up and admin panel. 
+
+* /api/users/:id POST
+** Receives a password and checks it against the user with the specified ID. used for authentication when changing passwords. 
+
+* /api/users/:id DELETE
+** Deletes a user specified by id. Used in admin panel. 
+
+* /api/users/:id PATCH
+** Changes the user's password given a new one. Used in change password in settings.
+
+* /api/transactions GET
+** Gets all the transactions/orders in the database. Used in the admin panel and in order history. 
+
+* /api/transactions POST
+** Creates a new transaction and stores it in the database. Used when checking out. 
+
+* /api/transactions/:id PATCH
+** Changes the status of the transaction specified by the id. Used in the admin order summary page to change status. 
+
+* /api/transactions/:id DELETE
+** Deletes the transaction specified by the id. Used mainly for testing purposes. 
+
+* /api/login POST
+** Login to the app. Used in login. 
+
+* /api/logout GET
+** Log out of the app. Used in logout. 
+
+## Deployment
+
+The web app is deployed with Heroku, with the mongoLab (mLab) plugin to facilitate usage of the database.

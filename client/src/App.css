@@ -1,0 +1,12 @@
+.app {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#logo {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.navbar {
+    min-height: 100px;
+}

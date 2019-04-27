@@ -1,0 +1,126 @@
+.home-content {
+    padding: 20px;
+}
+
+.section-title {
+    position: relative;
+    margin-bottom: 75px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.section-title h2 {
+    font-size: 30px;
+    letter-spacing: 0.05em;
+    text-align: center;
+}
+
+.section-title h2:before {
+    content: " ";
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    bottom: -24px;
+    left: 0;
+    right: 0;
+    width: 127px;
+    height: 2px;
+    background-color: #e0e0e0;
+}
+
+.section-title h2:after {
+    content: " ";
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    right: 0;
+    width: 40px;
+    height: 5px;
+    background-color: #5672f9;
+}
+
+.section-title p {
+    font-size: 18px;
+    line-height: 30px;
+    color: #848484;
+}
+
+.product-item {
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.product-item .card {
+    border: none;
+}
+
+.product-item .card .card-body {
+    padding: 20px;
+}
+
+.product-item .card .card-body .card-title {
+    font-size: 18px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.product-item .card .card-body .card-text {
+    color: #777;
+}
+
+.product-item .thumb-content {
+    position: relative;
+}
+
+.product-item .thumb-content .price {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #5672f9;
+    color: #fff;
+    display: inline-block;
+    padding: 4px 8px;
+    font-size: 12px;
+}
+
+.product-item .product-meta {
+    margin-bottom: 15px;
+}
+
+.product-item .product-meta li {
+    margin-right: 15px;
+}
+
+.product-item .product-meta li a {
+    color: #888;
+    font-size: 12px;
+}
+
+.product-item .product-meta li a i {
+    margin-right: 4px;
+}
+
+.product-item .product-ratings li {
+    margin-right: 1px;
+}
+
+.product-item .product-ratings li i {
+    font-size: 18px;
+    color: #dedede;
+    cursor: pointer;
+}
+
+.product-item .product-ratings .selected i {
+    color: #5672f9;
+}
+
+.carousel-item img {
+    filter: brightness(90%);
+}
+
+.carousel-caption h3 {
+    text-shadow: 1px 1px gray;
+    font-size: 300%;
+}

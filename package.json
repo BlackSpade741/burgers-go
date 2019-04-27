@@ -1,0 +1,40 @@
+{
+  "name": "burgersgo-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "server": "nodemon server/server.js",
+    "client": "npm start --prefix client",
+    "data": "C:/\"Program Files\"/MongoDB/Server/4.0/bin/mongod.exe --dbpath ./mongo-data",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "cd client/ && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
+  },
+  "cacheDirectories": [
+    "node_modules",
+    "react-ui/node_modules"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.18.3",
+    "concurrently": "^4.1.0",
+    "cookie-parser": "^1.4.4",
+    "date-and-time": "^0.6.3",
+    "express": "^4.16.4",
+    "express-session": "^1.15.6",
+    "mongodb": "^3.1.13",
+    "mongoose": "^5.4.19",
+    "mongoose-unique-validator": "^2.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/csc309-winter-2019/team07.git"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  }
+}

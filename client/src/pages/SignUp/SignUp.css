@@ -1,0 +1,39 @@
+.signup {
+    height: auto;
+    padding-bottom: 50px;
+}
+
+.signup-header {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.signup-dialog {
+    width: 400px;
+    height: auto;
+    background-color: white;
+    border-top: 4px solid orange;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    
+    margin-left: 10%;
+
+    border-radius: 10px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.05);
+  }
+
+.description {
+
+}
+
+.description img {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.description p {
+    font-size: 150%;
+}

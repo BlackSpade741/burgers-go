@@ -1,0 +1,15 @@
+#content{
+	width:80%;
+	margin: 0px auto 10px auto;
+}
+#content Button{
+	margin: 0px 10px 0px 0px;
+}
+.address-section {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.payment-section {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}

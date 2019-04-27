@@ -1,0 +1,56 @@
+# BurgersGo
+
+BurgersGo is a web app that allows users to customize their burgers, place an order, and have it delivered to them. 
+
+## Login / Sign up
+
+Users can sign up for an account and log in. The default user account is user/user, and the default admin account is admin/admin. 
+
+## Customization Options
+
+On the top nav bar, there is a drop down that leads to the customization options pages. On these pages, they'll be able to see a preview of the selection of customization options that they have. 
+
+## Burger Builder
+
+When the user selects Start Building, they are lead to the burger builder page, where they can add ingredients to their custom burger, as well as add sides to their combo. The users can click the different tabs in the ingredients bar to see different types of ingredients, and when they see one they want they can drag it over to add it to their burger. If the user does not like a decision they made, they can drag it back to the ingredients bar. After the user is done, they can then click checkout to move to the order page.
+
+## Order
+
+The order page is the customer's shopping cart. In this screen, customers will be able to add the burgers they build and later pay for their order. Alongside adding and removing items from their order, they can customize their name, delivery address and payment method. For the next phase when we integrate databases, the initial values of the form will be prepopulated according to the user.
+
+Before checking your order out, feel free to:
+* input your name
+* select another saved address
+* pay via a different method
+* remove items from your order
+
+Our shopping cart helps users keep track of what they want to purchase, and how they will get the delivery.
+
+Proceed onwards via the "Proceed to checkout" button
+
+## Order Summary
+
+The order summary page is a historical record of the order. This page serves as a receipt to the users' order and as an information hub that informs the user on the delivery progress. The status of the order updates as the order is made and as it is delivered. On the users end, they should not have the ability to change an order as the order is being made.
+
+Proceed onwards via either "See all Orders" button
+
+## Order History
+
+The Order History page is a complete record of the users' orders. This page should allow the user to see any order they have made in the past. To get more details of an order, such as the items an order includes, select the "Details" button.
+
+## Order Admin Panel
+
+The order administration panel is a list of historical records of every order made by every customer. Notice that each order is represented as a table row instead of a card. The compressed view should be more useful for an administrator because of the quantity of orders. When a database is connected, the order of the orders should be newest order first. The status of each order is displayed to easily find orders that should be made, or should be delivered.
+
+Proceed onwards via any "Details" button
+
+## Order Summary Admin
+The order summary admin is the administor's view of an order. Compared to a user, the administrator is given more privileges for controlling an order after it has been sent. This order summary page will be useful for when each order item is being made, as well as communicating the order's status to the customer. Try selecting a different order status, and the button should remain pressed.
+
+## User Profile
+
+The user can navigate to the user Profile page via the dropdown in the top nav bar. Here they can see recent orders, favourited orders, as well as add dietary restrictions.
+
+## User Settings
+
+The user can navigate to the user Profile page via the dropdown in the top nav bar. Here they can make changes to their account, addresses, and payment info. 

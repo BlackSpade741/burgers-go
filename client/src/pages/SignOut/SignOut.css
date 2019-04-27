@@ -1,0 +1,27 @@
+.sign-out {
+    height: 450px;
+    padding: 10%;
+}
+
+.sign-out-floating-dialog {
+    width: 500px;
+    height: 300px;
+    background-color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+  
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: auto;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 400%;
+}

@@ -1,0 +1,17 @@
+.not-found {
+    height: 400px;
+}
+
+.not-found-floating-box {
+    width: 600px;
+    height: 400px;
+
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    text-align: center;
+}

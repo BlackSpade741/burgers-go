@@ -1,0 +1,199 @@
+
+.ingredients {
+    width: 40%;
+}
+
+#burger-main {
+    width: 100%;
+    min-height: 980px;
+    margin-top:40px;
+
+    /*border-top: 4px solid orange; */
+    border-radius: 10px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.05);    
+}
+
+#navbar {
+    height: auto;
+}
+
+.droppable {
+    width: 200px;
+    height: 200px;
+}
+
+/*   Border Color */
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #495057;
+    background-color: white;
+    border-color: #dee2e6 #dee2e6 #fff;
+    padding-left: 1px;
+    padding-right: 1px;
+}
+
+nav.nav.nav-tabs {
+    background-color: #343A40;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding-top: 6px;
+}
+
+
+#side-bar {
+    min-height: 600px;
+    background-color: white;
+    width: 427px;
+    
+    border-radius: 20px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.05);
+}
+
+#responsive-navbar-nav .dropdown-menu.show {
+    overflow: scroll;
+    max-height: 500px;
+    
+}
+
+#responsive-navbar-nav .dropdown-menu {
+    overflow: scroll;
+    max-height: 500px;
+    width: 428px;
+    
+}
+
+.dragable{
+    display: inline-block;
+    margin-left: 25px;
+    margin-right: 10px;
+    width: 171px;
+}
+
+#plate-content .dragable {    
+    height: 60%;
+    margin: auto;    
+}
+
+.custom-header {
+    text-align: center;
+    color: #212529;
+}
+
+#checkout-cap {
+    color: white;
+}
+
+#burger-holder {
+    min-height: 650px;    
+    margin-bottom: 4rem;
+}
+#storage {
+    margin-top:30px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    
+}
+
+#plate {
+    margin-top:30px;
+}
+
+#checkout {
+    margin-top:30px;
+    margin-right: 60px;
+    min-width: 310px;    
+}
+
+#checkout-child {
+    width: 100px;
+}
+
+#but {
+    border-radius: 25px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.05);
+
+}
+
+#responsive-navbar-nav #ingredient-caption {
+    text-align: center;
+}
+
+#plate-content #ingredient-caption{
+    visibility: hidden;
+}
+
+
+.nav-tabs .nav-item {
+    font-size: 17px;
+    margin-right: 10px;
+    margin-left: 19px;
+    overflow: hidden;
+}
+
+.nav-tabs .nav-item {
+    color: white;
+    margin: auto;
+}
+/*====================================
+    Transition Animation for Dropdowns
+====================================== */
+
+@media (min-width: 768px) {
+    .dropdown-slide {
+      position: static;
+    }
+    .dropdown-slide .open > a, .dropdown-slide .open > a:focus, .dropdown-slide .open > a:hover {
+      background: transparent;
+    }
+    .dropdown-slide.full-width .dropdown-menu {
+      left: 0 !important;
+      right: 0 !important;
+    }
+    .dropdown-slide:hover .dropdown-menu {
+      display: none;
+      opacity: 1;
+      display: block;
+      -webkit-transform: translate(0px, 0px);
+              transform: translate(0px, 0px);
+      opacity: 1;
+      visibility: visible;
+      color: #777;
+      -webkit-transform: translateY(0px);
+              transform: translateY(0px);
+    }
+    .dropdown-slide .dropdown-menu {
+      margin-top: 0;
+      border-radius: 0;
+      opacity: 1;
+      visibility: visible;
+      position: absolute;
+      padding: 15px;
+      border: 1px solid #ebebeb;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+      transition: .3s all;
+      position: absolute;
+      display: block;
+      visibility: hidden;
+      opacity: 0;
+      -webkit-transform: translateY(30px);
+              transform: translateY(30px);
+      transition: visibility 0.2s, opacity 0.2s, -webkit-transform 500ms cubic-bezier(0.43, 0.26, 0.11, 0.99);
+      transition: visibility 0.2s, opacity 0.2s, transform 500ms cubic-bezier(0.43, 0.26, 0.11, 0.99);
+      transition: visibility 0.2s, opacity 0.2s, transform 500ms cubic-bezier(0.43, 0.26, 0.11, 0.99), -webkit-transform 500ms cubic-bezier(0.43, 0.26, 0.11, 0.99);
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 480px) {
+    .dropdown-slide .dropdown-menu {
+      -webkit-transform: none;
+              transform: none;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .navbar-toggleable-md > .container {
+      margin-right: 0;
+      margin-left: 0;
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+  }

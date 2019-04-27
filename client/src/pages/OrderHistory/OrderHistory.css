@@ -1,0 +1,12 @@
+.orderHistory {
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 650px) {
+    .orderHistory {
+        padding-left: 5%;
+		padding-right: 5%;
+    }
+}

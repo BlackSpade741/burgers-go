@@ -1,0 +1,38 @@
+.profileSettings {
+    min-height: 50vh;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 5%;
+}
+
+@media (max-width: 650px) {
+    .profileSettings {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+.passwordSettings {
+    padding-top: 20px;
+}
+
+.addressSettings {
+    padding-top: 20px;
+}
+
+.paymentSettings {
+    padding-top: 20px;
+}
+
+.input-group {
+    padding-top: 20px;
+}
+
+.spacer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.current-addresses {
+    margin-bottom: 10px;
+}

@@ -1,0 +1,88 @@
+buns:
+B2G classic potato bun
+brioche
+ciabatta
+pretzel
+rice
+gluten free
+lettuce
+
+
+proteins:
+B2G classic beef patty
+angus burger
+barbeque
+cheeseburger
+salmon
+steak
+veggie
+impossible
+tofu
+felafel
+
+
+
+veggies:
+lettuce
+fresh tomato
+sun-dried tomato
+fresh onion
+caramelized onions
+classic coleslaw
+pickles
+spinach
+olives
+
+
+toppings:
+bacon
+mushrooms
+american cheese
+cheddar cheese
+blue cheese
+goat cheese
+monterey jack cheese
+fresh mozz
+kimchi
+pepperoni
+put an egg on it
+avocado
+corn
+doritos
+parmesan
+pepper flakes
+
+
+
+sauces:
+ketchup
+mustard
+barbeque
+HP sauce
+worcestershire sauce
+Big Mike Secret Sauce
+mayonnaise
+marinara
+maple syrup
+ranch
+pico de gallo
+queso
+tzatziki sauce
+
+
+sides:
+canned pop
+water
+bottled pop
+potato fries
+yam fries
+potato salad
+corn on a cob
+nachos
+mac and cheese
+garden salad
+ceasar salad
+pesto pasta salad
+loaded potato
+loaded eggplants
+sweet grilled carrots

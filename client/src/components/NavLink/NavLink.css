@@ -1,0 +1,15 @@
+.nav-link {
+	padding: 0;
+}
+.white {
+    color: white;
+}
+.black {
+    color: black;
+}
+.white:hover {
+    color: white;
+}
+.black:hover {
+    color: black;
+}
