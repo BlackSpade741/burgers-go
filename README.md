@@ -20,18 +20,3 @@ BurgersGo is built by the following students, all from the University of Toronto
 * [Reece Martin](https://github.com/reecemartin)
 * Allan Chang
 * Greg Mehdiyev
-
-## Deployment
-
-Note: Do NOT worry about deployment when you are developing, as long as your changes have been pushed to the Github repo, we will deploy it at the end. 
-
-The server is deployed through Heroku. 
-
-### Steps
-
-* Install the Heroku CLI interface.
-* Sign up for an account on Heroku.
-* Make sure you have been added as a collaborator in the app (Send a message to Ellen!)
-* Add a git remote to the Heroku app's repository with this command: `heroku git:remote -a sleepy-lowlands-61784`.
-* Add and commit your changes.
-* When ready to deploy, first make sure you have the most up to date changes, then use this command: `git push heroku master`.
